@@ -1,0 +1,54 @@
+#include<stdio.h>
+
+// int age[5](cuantas casillas) = {21, 29, 25}; //vectores de cada casilla en este caso 3 vectores < 5 asique la 3 y la 4 seran por defecto 0, las casillas empiezan desde el 0 entonces la casilla que ocupe el 0 sera el 21
+
+int main() {
+
+	int edad[5] = {21, 29, 25, 32, 17};
+	edad[2] = 56; //asigna a una matriz definida un nuevo valor
+	
+	printf("\n%d ", edad [0]);
+	printf("%d ", edad [1]);
+	printf("%d ", edad [2]);
+	printf("%d ", edad [3]);
+	printf("%d\n", edad [4]); // del vector asignado pones que valor quieres de este
+	
+	float notas[3];
+	
+	notas[0] = 1.14;
+	notas[1] = 1;
+	notas[2] = 0.9;
+	//asignarlas manualmente 
+	printf("\n%.2f ", notas [0]);
+	printf("%.2f ", notas [1]);
+	printf("%.2f\n\n", notas [2]);
+	
+	int num[5];
+	
+	printf("Introduce 5 numeros: ");
+	scanf("%d", &num[0]);
+	scanf("%d", &num[1]);
+	scanf("%d", &num[2]);
+	scanf("%d", &num[3]);
+	scanf("%d", &num[4]);
+	//pedir al usuario que asigne los vectores
+	printf("\n%d ", num[0]);
+	printf("%d ", num[1]);
+	printf("%d ", num[2]);
+	printf("%d ", num[3]);
+	printf("%d\n\n", num[4]);
+	
+	int para[5];
+	int i;
+	
+	printf("Introduce 5 numeros: ");
+	for ( i = 0 ; i < 5 ; i++ ) {
+	scanf("%d", &para[i]);
+	}
+	printf("\n");
+	for ( i = 0 ; i < 4 ; i++ ) {
+	printf("%d ", para[i]);
+	}
+	printf("%d\n\n", para[4]);
+	
+}

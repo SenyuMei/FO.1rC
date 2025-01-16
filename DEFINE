@@ -1,0 +1,22 @@
+#include<stdio.h>
+
+#define PI 3.1415 // solo hace falta nombre valor no va con =
+
+int main() {
+
+	printf("\n%.2f\n\n", PI); // como vemos no hacen falta definir que tipo de variables solo hace falta poner el %d, %f, %c que se adecue a nuestro define
+	
+	/* PI = 500;
+	
+	printf("%f", PI); los defines estaran definidos permanentemente lo que quiere decir que su valor es inmutable por lo que si intentamos cambiar su valor nos dara un error de codigo */ 
+	float rad, area;
+	
+	printf("Escribe un radio de la circumferencia: ");
+	scanf("%f", &rad);
+	printf("\n");
+	
+	area = PI * rad * rad;
+	
+	printf("%.2f\n\n", area);
+	
+}
